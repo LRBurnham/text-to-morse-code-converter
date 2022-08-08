@@ -7,7 +7,7 @@ while True:
     if user_text == "STOP":
         break
 
-    split_text = [char for char in user_text]
+    split_text = [ch for ch in user_text]
     morse_text = ""
 
     for character in split_text:
