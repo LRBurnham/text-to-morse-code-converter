@@ -7,12 +7,8 @@ while True:
     if user_text == "STOP":
         break
 
-    split_text = [ch for ch in user_text]
-    morse_text = ""
+    split_chars = [ch for ch in user_text]
+    morse_chars = [code[ch] for ch in split_chars]
 
-    for character in split_text:
-        morse_text += f"{code[character]} "
-
+    morse_text = " ".join(morse_chars)
     print(morse_text)
-
-
